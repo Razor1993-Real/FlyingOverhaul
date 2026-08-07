@@ -4,6 +4,8 @@ FLY stops opening the town map. You climb onto the bird and fly Kanto
 yourself — at four and a half times walking speed, as high as you like, until
 you pick a spot and put down.
 
+![Taking off in a ring of wind, climbing, and cruising over Kanto](https://raw.githubusercontent.com/Razor1993-Real/FlyingOverhaul/main/docs/media/flight.gif)
+
 **Requires the [Dramatic Shape voxel mod](https://github.com/DramaticShape/DramaticShapeVoxelMod).**
 The flight is a thing you do in a 3D world. Without that mod installed this
 one steps aside completely and the town map opens exactly as it always did.
@@ -20,6 +22,8 @@ town in each direction — one per sector, so eleven towns never turn into
 eleven overlapping labels. Neighbours fade in and out as you approach. Towns
 you have been to are a filled green pip and you may land there; the rest are
 hollow and say `? NOT EXPLORED`.
+
+![The ribbon names Pallet Town and counts the distance down](https://raw.githubusercontent.com/Razor1993-Real/FlyingOverhaul/main/docs/media/compass.gif)
 
 **Landing rules that mean something.** Water and unwalkable ground refuse a
 landing. So does any map you have not walked yourself — towns *and* routes.

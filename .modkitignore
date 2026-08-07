@@ -17,3 +17,13 @@ tests/fly_partymenu_test.lua
 index/meta.json
 index/description.md
 index/thumbnail.png
+
+# The README's animations. Nine megabytes of marketing has no business in a
+# sixty-kilobyte install -- and CONTRIBUTING-mods.md's legal posture is
+# explicit that a distributed mod carries no ROM-derived bytes "not even in
+# its preview images". They live in the repository, where the README reads
+# them, and nowhere else.
+docs/media/flight.gif
+docs/media/compass.gif
+docs/media/landing.gif
+docs/media/fly-menu.gif

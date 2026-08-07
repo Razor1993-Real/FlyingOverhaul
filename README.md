@@ -3,6 +3,11 @@
 **FLY stops opening the town map: you ride the bird over Kanto yourself and
 pick your own place to land.**
 
+<p align="center">
+  <img src="docs/media/flight.gif" width="640"
+       alt="The bird lifts off in a ring of wind, climbs, and cruises over Kanto while the compass names Viridian City">
+</p>
+
 For the player who knows the map and wants to *see* it — the one who noticed
 that a game which built Kanto in three dimensions still teleports you across
 it through a menu.
@@ -14,6 +19,14 @@ built it and the town map opens as it always did.
 
 
 ## Playing
+
+Take a mon that knows FLY, open the party menu and choose it. That is the
+whole of the interface — no destination list, no map screen:
+
+<p align="center">
+  <img src="docs/media/fly-menu.gif" width="640"
+       alt="The party menu opens, FLY is chosen, and the flight starts at once in a swirl of leaves">
+</p>
 
 | | |
 | --- | --- |
@@ -64,8 +77,14 @@ code. On a window too narrow for a name and its distance the *layout* gives
 way — the distance goes first, then the label, leaving a marker that still
 points the right way.
 
-Towns you have not been to are a hollow marker rather than a name: there is
-something out there, and finding out what is the game.
+Towns you have been to are a filled green pip and you may put down there.
+Towns you have not are a hollow one and no name: there is something out there,
+and finding out what is the game.
+
+<p align="center">
+  <img src="docs/media/compass.gif" width="640"
+       alt="The ribbon names Pallet Town and counts the distance down as the bird flies toward it">
+</p>
 
 ## Landing
 
@@ -80,6 +99,11 @@ something out there, and finding out what is the game.
 You can land anywhere else you like, including a map away from where you took
 off — the crossing is made official as you come down, so you really are on
 that map when you get there.
+
+<p align="center">
+  <img src="docs/media/landing.gif" width="640"
+       alt="The bird descends on Viridian City, the wind kicks up dust, and the player is standing on the ground">
+</p>
 
 The mod keeps its own record of where you have walked (the game itself only
 remembers the eleven towns). On an existing save that record is worked out

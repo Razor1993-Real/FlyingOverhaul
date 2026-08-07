@@ -12,27 +12,6 @@ which it requires: the flight is a thing you do in a 3D world. Without it —
 or on a driver with no depth pass — the FLY row is left exactly as vanilla
 built it and the town map opens as it always did.
 
-## Try it
-
-From a checkout of the engine, with the voxel mod installed alongside:
-
-```bash
-POKEPORT_IMPORT_ROM="$PWD/Pokemon Red.gb" lovec .
-```
-
-Then take a PIDGEOT with FLY and a badge, open the party menu and choose FLY.
-
-The two commands that show it without playing to that point — the whole
-flight photographed and asserted, and the pure geometry with no engine at
-all:
-
-```bash
-POKEPORT_IMPORT_ROM="$PWD/Pokemon Red.gb" POKEPORT_DRIVER=mods/FlyingOverhaul/tests/fly_shots.lua SHOT_DIR=.scratchpad/flyshots lovec .
-```
-
-```bash
-luajit mods/FlyingOverhaul/tests/fly_logic_test.lua
-```
 
 ## Playing
 

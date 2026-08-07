@@ -1,0 +1,5 @@
+# Store every text file with LF. The release workflow builds the archive
+# with `git archive`, which hands out exactly what is stored -- and the
+# workflow that unpacks it is bash on Linux.
+* text=auto eol=lf
+*.png binary

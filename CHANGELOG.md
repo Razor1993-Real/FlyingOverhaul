@@ -3,6 +3,26 @@
 Format: [keep a changelog](https://keepachangelog.com/en/1.1.0/).
 Version headings match `manifest.json`'s `version`.
 
+## 1.0.4
+
+### Changed
+
+- **`profile` is `overhaul`, not `content`.** It had been `content` since the
+  scaffold created it, and was never re-read against what the mod turned into:
+  five wrapped engine hooks, the `engine_internals` permission, and patched
+  internals in the voxel mod it draws through. That is engine behaviour, not
+  registered content, and `CONTRIBUTING-mods.md` puts the `MECHANIC` category
+  this mod already declared under the `overhaul` profile.
+
+  The visible consequence is a warning the launcher shows before installing —
+  *"Profile 'overhaul' changes engine behaviour beyond content"* — which is
+  true, and was being suppressed by the wrong label.
+
+  `affects_link` stays `false` and now has to be explicit: an `overhaul`
+  defaults it to `true` (`src/mods/Manifest.lua`), and this mod writes to none
+  of the link-relevant registries, so the default would be wrong. Do not drop
+  that line from the manifest.
+
 ## 1.0.3
 
 The two things the wiki's publishing guide asks for that were missing. Both

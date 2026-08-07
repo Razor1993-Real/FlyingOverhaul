@@ -3,6 +3,27 @@
 Format: [keep a changelog](https://keepachangelog.com/en/1.1.0/).
 Version headings match `manifest.json`'s `version`.
 
+## 1.0.2
+
+Nothing in `lib/` or `main.lua` has changed since 1.0.0. This release exists
+so the manifest and the published tag agree again.
+
+### Changed
+
+- The README opens with the flight itself: four animations — take-off and the
+  climb over Kanto, the party menu, the compass counting a town down, and the
+  landing. `.modkitignore` keeps them, and the mod-index metadata, out of the
+  installable archive.
+- The release workflow no longer cuts a version for a documentation change.
+  `docs/**` and `index/**` join `**.md` in `paths-ignore`; neither ever
+  reaches a player, and 1.0.1 was a release whose archive differed from
+  1.0.0's by one paragraph of README.
+
+## 1.0.1
+
+Cut by the release workflow from a README edit. Its archive differs from
+1.0.0's only in `README.md`.
+
 ## 1.0.0
 
 First public release. The mod carried in-development versions up to 2.0.0

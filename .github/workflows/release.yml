@@ -28,6 +28,12 @@ on:
     paths-ignore:
       - '.github/**'
       - '**.md'
+      # Nothing under these ever reaches a player: .modkitignore keeps both
+      # out of the archive. Adding a README animation used to cut a release
+      # whose .zip differed from the one before it by nothing at all -- the
+      # '**.md' line alone does not cover a .gif sitting next to the prose.
+      - 'docs/**'
+      - 'index/**'
   workflow_dispatch:
     inputs:
       version:

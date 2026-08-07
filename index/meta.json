@@ -2,7 +2,7 @@
   "id": "FLYING_OVERHAUL",
   "title": "Razor1993s Flying Overhaul",
   "author": "Razor1993",
-  "summary": "FLY stops opening the town map: ride the bird over Kanto and pick your own landing. Compass, landing rules, and the Kanto map laid under the void. Needs the Dramatic Shape voxel mod.",
+  "summary": "Overhauls the FLY system while keeping it as close to the vanilla style as possible. FLY no longer opens the town map—instead, ride the bird freely over Kanto and choose your own landing spot",
   "version": "1.0.4",
   "categories": [
     "GAMEPLAY",

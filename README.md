@@ -17,6 +17,22 @@ which it requires: the flight is a thing you do in a 3D world. Without it —
 or on a driver with no depth pass — the FLY row is left exactly as vanilla
 built it and the town map opens as it always did.
 
+## Installing
+
+1. Install the [Dramatic Shape voxel mod](https://github.com/DramaticShape/DramaticShapeVoxelMod)
+   first, if you have not. This one does nothing without it.
+2. Download **`FLYING_OVERHAUL-<version>.zip`** from
+   [Releases](https://github.com/Razor1993-Real/FlyingOverhaul/releases).
+3. In the game: **MODS → Import mod .zip**, pick the file, and enable it.
+
+The archive has its files at the root, which is the shape the importer
+expects — so unpacking it into your `mods/` folder by hand works too.
+Once installed, the launcher's **Update** and **Versions** buttons follow
+this repository's releases on their own.
+
+What the mod changes from the original game, including what it only
+approximates, is written down in [DIFFERENCES.md](DIFFERENCES.md).
+
 
 ## Playing
 
@@ -297,3 +313,16 @@ The real path: a PIDGEOT that knows FLY, the THUNDERBADGE, the party menu
 opened and the cursor walked onto FLY — and no town map at the end of it.
 
 All three run inside the repository's own `scripts/test.sh` mod-SDK tier.
+
+## Credits and standing
+
+Built on **DramaticShape**'s voxel mod, which the flight is drawn through.
+The town map data and the visited-town flag that the compass and the underlay
+read come from **pret/pokered**, by way of the recompilation's own extractor.
+
+Nothing distributed here is ROM-derived: the sheet under the void is built at
+run time from the player's own imported cache, and what you download is
+Lua and a manifest.
+
+This is a mod by Razor1993. It is not an official product and is not
+affiliated with Nintendo, Game Freak, or The Pokémon Company.

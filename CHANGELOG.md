@@ -3,6 +3,24 @@
 Format: [keep a changelog](https://keepachangelog.com/en/1.1.0/).
 Version headings match `manifest.json`'s `version`.
 
+## 1.0.3
+
+The two things the wiki's publishing guide asks for that were missing. Both
+ship inside the archive, which is why this is a release and not a quiet
+documentation push.
+
+### Added
+
+- **`DIFFERENCES.md`** — what the mod changes from the original game, and
+  what it only approximates: the derived explored-region ledger on saves made
+  before the mod existed, and the underlay's coastline between the eleven
+  towns it pins exactly.
+- **Installing** in the README. The instructions went out with the developer
+  "Try it" section and nothing replaced them, so the README said what the mod
+  does and never how to get it.
+- A credits and standing note: whose work this is built on, that nothing
+  distributed is ROM-derived, and that this is not an official product.
+
 ## 1.0.2
 
 Nothing in `lib/` or `main.lua` has changed since 1.0.0. This release exists

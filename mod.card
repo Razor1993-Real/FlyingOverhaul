@@ -1,0 +1,35 @@
+-- Sharing metadata (CONTRIBUTING-mods.md 3.2). Read by tooling and the
+-- manager's detail pane; never by the loader's merge, so a malformed card
+-- can never break a load.
+return {
+  summary = "FLY becomes a free flight: ride the bird over Kanto and pick your own landing.",
+  author = "Razor1993",
+  contact = "https://github.com/Razor1993-Real/FlyingOverhaul",
+  tags = { "quality-of-life", "ui", "cosmetic", "flying", "exploration" },
+  differences = {
+    changed = {
+      "the party menu's FLY row no longer opens the town map -- it starts a flight",
+      "FLY V-CURVE, T-SHIFT and VOXEL are borrowed from the voxel mod for the length of a flight and handed straight back",
+      "the world streams several towns wide during a flight instead of the four maps walking needs",
+    },
+    added = {
+      "free flight: climb, cruise and land under the player's own steering, at 4.5x walking speed",
+      "a compass ribbon naming the nearest town in each direction, with the unexplored ones marked and refused as landing sites",
+      "the Kanto town map laid under the void between the loaded maps, warped so every town sits on its real position",
+      "a wind tornado with dust and leaves at take-off and landing",
+      "seven mod options: FLY HEIGHT, FLY SPEED, FLY LOOK, FLY VOXEL, FLY T-SHIFT, FLY V-CURVE and KANTO MAP",
+    },
+    known = {
+      "requires the Dramatic Shape voxel mod; without it the flight does not install",
+      "one flight is one continuous stretch of world -- it cannot cross into a region the loader has not streamed in",
+      "the underlay is the town map, a stylised diagram: between the towns, which are pinned exactly, its coastline is approximate. Vermilion's bay is corrected by hand; other harbours are not",
+      "the compass ribbon reads the frame's geometry from render.letterbox, because the voxel mod's battle-exit wrapper drops render.hud's viewport",
+    },
+  },
+  credits = {
+    { who = "DramaticShape", for_ = "the voxel mod this flight is drawn through, and its published lib namespace" },
+    { who = "pret/pokered", for_ = "wTownVisitedFlag and the town map entries the compass and the underlay read" },
+    { who = "Pokemon Gen 1 Recompilation Project", for_ = "the mod platform, the hook seams and the modkit" },
+  },
+  compat = { engine = ">=1.0.0 <2.0.0", modApi = 2 },
+}

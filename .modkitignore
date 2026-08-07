@@ -1,0 +1,19 @@
+# Files that stay in the repo and out of the distributed package.
+# Exact relative paths, one per line -- modkit matches literally, no globs.
+
+# All three suites. Each one needs the engine's checkout to run at all: the
+# two drivers require engine modules (src.render.Pipelines, PaletteFX,
+# tests/drivers/util.lua), and the pure-logic suite measures its anchors
+# against data/generated/maps.lua -- deliberately, so the numbers are the
+# game's own. A shipped test that requires an engine module reads as a
+# private require against the archive, and `pack` treats warnings as fatal.
+tests/fly_logic_test.lua
+tests/fly_shots.lua
+tests/fly_partymenu_test.lua
+
+# The mod index entry: metadata for gen1recomp-mod-index, versioned here so
+# the listing and the mod cannot drift apart. Not part of what a player
+# installs.
+index/meta.json
+index/description.md
+index/thumbnail.png

@@ -1,0 +1,18 @@
+{
+  "id": "FLYING_OVERHAUL",
+  "name": "Razor1993s Flying Overhaul",
+  "version": "1.0.0",
+  "api": 2,
+  "entry": "main.lua",
+  "profile": "content",
+  "category": "MECHANIC",
+  "game_version": "0.0.0-dev || >=0.1.37 <2.0.0",
+  "priority": 50,
+  "dependencies": [],
+  "optional_dependencies": ["DRAMATIC_SHAPE"],
+  "conflicts": [],
+  "permissions": ["engine_internals"],
+  "affects_link": false,
+  "github": "Razor1993-Real/FlyingOverhaul",
+  "description": "FLY stops opening the town map. The player climbs onto the bird and flies free over the voxel world at four and a half times walking speed, with a compass, landing rules and Kanto laid under the void, until they choose where to put down."
+}
